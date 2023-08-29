@@ -1,7 +1,6 @@
-import {screen, render} from "@testing-library/react",
+import {getByRole, render, screen} from "@testing-library/react"
 import "@testing-library/jest-dom"
 import Button from "./index"
-
 
 test('renders button', ()=>{
     render(<Button/>);

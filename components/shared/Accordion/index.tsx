@@ -25,10 +25,10 @@ const Accordion = () => {
     <>
       <div className="w-full flex flex-col space-y-5">
         {data.map((item) => (
-          <div className="  border-[1px] border-white p-3 flex flex-col ">
+          <div className="  border-[1px] border-white p-3 flex flex-col " key={item.id}>
             <div
               className="h-full  p-3 flex flex-row justify-between"
-              key={item.id}
+              
               onClick={() => handleClick(item.id)}
             >
               <p>Text</p>
